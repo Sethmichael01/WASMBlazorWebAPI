@@ -1,0 +1,8 @@
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\bin\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.deps.json
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\bin\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.dll
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\bin\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.pdb
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\obj\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.csprojAssemblyReference.cache
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\obj\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.AssemblyInfoInputs.cache
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\obj\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.AssemblyInfo.cs
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\obj\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.dll
+C:\Users\sethm\source\repos\WebAPIBlazor\BlazorWASMCrudAPI\Shared\obj\Debug\netstandard2.1\BlazorWASMCrudAPI.Shared.pdb

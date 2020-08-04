@@ -1,0 +1,59 @@
+﻿@page  "/deleteemployee/{id}"
+@using BlazorWASMCrudAPI.Shared
+@inject NavigationManager NavigationManager
+@inject HttpClient Http
+
+
+
+<h3>DeleteEmployee</h3>
+<br />
+<form>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="EmpName" class="custom-control-label">Name</label>
+                <input for="EmpName" class="form-control" @bind="@emp.EmpName" />
+            </div>
+            <div class="form-group">
+                <label for="EmpName" class="custom-control-label">Designation</label>
+                <input for="EmpName" class="form-control" @bind="@emp.Designation" />
+            </div>
+            <div class="form-group">
+                <label for="EmpName" class="custom-control-label">Department</label>
+                <input for="EmpName" class="form-control" @bind="@emp.Department" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@Delete" value="Save" />
+                <input type="button" class="btn" @onclick="@Cancel" value="Cancel" />
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@code {
+    [Parameter]
+    public string id { get; set; }
+
+    EmployeeInfo emp = new EmployeeInfo();
+
+    protected override async Task OnInitializedAsync()
+    {
+        emp = await Http.GetJsonAsync<EmployeeInfo>("https://localhost:44305/api/EmployeeInfoes/"+id);
+    }
+    
+    protected async Task Delete()
+    {
+        await Http.DeleteAsync("https://localhost:44305/api/EmployeeInfoes/"+id);
+        NavigationManager.NavigateTo("employeeList");
+    }
+
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("employeeList");
+    }
+}
